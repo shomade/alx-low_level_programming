@@ -7,16 +7,13 @@
  */
 int main(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-{
-if (ch != 'q' && ch != 'e')
-{
-putchar(ch);
-}
-}
+int n;
 
-putchar(10); /* this is an ascii code for new line*/
-
+for (n = 0; n < 10; n++)
+{
+printf("%d", n);
+}
+printf("\n");
 return (0);
 }
+
