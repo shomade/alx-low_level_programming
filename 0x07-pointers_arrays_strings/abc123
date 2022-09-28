@@ -1,0 +1,4 @@
+NSERT --                  :set binary
+set noeol
+abc123
+
