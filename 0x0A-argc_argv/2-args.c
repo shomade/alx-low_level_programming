@@ -1,14 +1,17 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * _strlen_recursion - returns the length of a string.
- * @s: string
- * Return: the length of a string.
- */
-int _strlen_recursion(char *s)
+* main -> This is a function that print all arguments it receives
+* @argc: argc is a parameter
+* @argv: an array of a command line listed
+* Return: 0 for success
+*/
+int main(int argc, char *argv[])
 {
-	if (*s == '\0')
-		return (0);
-	else
-		return (1 + _strlen_recursion(s + 1));
+	int i;
+
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
+	return (0);
 }
+

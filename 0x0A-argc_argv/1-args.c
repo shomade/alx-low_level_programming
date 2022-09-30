@@ -1,15 +1,12 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * _print_rev_recursion - prints a string in reverse.
- * @s: string
- * Return: no return.
+ * main - prints the number of arguments passed into it.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
-void _print_rev_recursion(char *s)
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	if (*s != '\0')
-	{
-		_print_rev_recursion(s + 1);
-		_putchar(*s);
-	}
+	printf("%d\n", argc - 1);
+	return (0);
 }

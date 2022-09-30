@@ -1,16 +1,47 @@
-#include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * factorial - returns the factorial of a given number.
- * @n: input number.
- * Return: factorial of the number.
+ * main - multiplies two numbers.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
-int factorial(int n)
+int main(int argc, char *argv[])
 {
-	if (n < 0)
-		return (-1);
-	else if (n == 0)
+	if (argc != 3)
+	{
+		printf("Error\n");
 		return (1);
-	else
-		return (n * factorial(n - 1));
+	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
